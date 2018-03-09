@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="converter.ConverterController">
+   <center>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="10.0" prefHeight="64.0" prefWidth="762.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textfield1" alignment="CENTER" onAction="#handleConvert" />
+            <ComboBox fx:id="box1" prefWidth="150.0" />
+            <TextField fx:id="textfield2" alignment="CENTER" onAction="#handleConvert" />
+            <ComboBox fx:id="box2" prefWidth="150.0" />
+            <Button mnemonicParsing="false" onAction="#handleConvert" text="Convert" />
+            <Button mnemonicParsing="false" onAction="#handleClear" text="Clear" />
+         </children>
+         <padding>
+            <Insets bottom="7.0" left="3.0" right="3.0" top="7.0" />
+         </padding>
+      </FlowPane>
+   </center>
+</BorderPane>
